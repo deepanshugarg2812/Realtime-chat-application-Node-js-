@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <script src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script defer src="scripts.js"></script>
+    <title>Chat</title>
+</head>
+<body>
+
+    <!-- Header part -->
+    <div class="container">
+        <div class="text-center">
+            <h1>Chat application</h1>
+        </div>
+    </div>
+
+    <!-- Content-->
+
+    <div class="container" id="userVerifyBox">
+        <div class="row">
+            <input type="text" class="form-control col-xs-12 col-sm-12 col-md-4 m-2" id="userName" placeholder="Enter your username">
+            <input type="text" class="form-control col-xs-12 col-sm-12 col-md-4 m-2" id="password" placeholder="Enter your password">
+            <button id="login" class="btn btn-primary btn-block col-md-2 m-2">Submit</button>
+        </div>
+    </div>
+
+    <div class="container" id="messageBox">
+        <div class="row">
+            <input type="text" class="form-control col-xs-12 col-sm-12 col-md-4 m-2" id="user" placeholder="Enter the name of the user by default broadcase"> 
+            <input type="text" class="form-control col-xs-12 col-sm-12 col-md-4 m-2" id="msg" placeholder="Enter your message">
+            <button id="sendBtn" class="btn btn-primary btn-block col-md-2 m-2">send</button>
+        </div>
+
+        <ul id="listMsg" class="col">
+
+        </ul>
+    </div>
+
+</body>
+</html>
