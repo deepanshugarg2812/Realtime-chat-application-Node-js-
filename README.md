@@ -4,7 +4,7 @@
 
 The applicaton is buit on the institution level can can only handles the user up to some extent
 
-###Functionality
+### Functionality
  - Broadcasting 
  - Personal messaging
  - Authentication
