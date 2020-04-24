@@ -6,6 +6,8 @@ const socketio = require('socket.io')
 const server = http.createServer(app)
 const io = socketio(server)
 
+const Server_Port = process.env.PORT || 3333;
+
 app.use('/',express.static(__dirname+'/public'))
 
 //Keep the track of the ids
@@ -50,6 +52,6 @@ io.on('connection',(socket)=>{
 
 })
 
-server.listen(3333,() =>{
+server.listen(Server_Port,() =>{
     console.log("Serve has started at the " + "http://localhost:3333")
 })
